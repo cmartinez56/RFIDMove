@@ -4,9 +4,10 @@
 
 /* Variables and Constants */
 using namespace std;
-#define LED 17
-#define HIGH 0x1
-#define LOW 0x0
+#define LED 16
+#define HIGH 225
+#define HALF 128
+#define OFF 0
 /* Main function */
 
 int main(void)
@@ -18,9 +19,9 @@ int main(void)
 
     for (;;)
     {
-        gpioWrite(LED, HIGH);
+        gpioPWM(LED, 255);
         gpioDelay(5000);  //In MicroSeconds 
-        gpioWrite(LED, LOW);
+        gpioPWM(LED, 128);
         gpioDelay(5000);
     }
 
