@@ -1,6 +1,7 @@
 /* Libraries */
 #include <iostream>
 #include <pigpio.h>
+// g++ -Wall -pthread -o pwmBlinky pwmBlinky.cpp -lpigpio -lrt
 
 /* Variables and Constants */
 using namespace std;
