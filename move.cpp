@@ -1,3 +1,4 @@
+
 #include <iostream>		// Include all needed libraries here
 #include <wiringPi.h>
 
@@ -8,7 +9,7 @@ int main()
 {
 wiringPiSetup();			// Setup the library
 pinMode(23, PWM_OUTPUT);		// Configure GPIO1 as an output for PWM
-pinMode(25, OUTPUT)
+pinMode(25, OUTPUT);
 // Main program loop
 while(1)
 {
